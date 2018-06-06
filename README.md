@@ -47,3 +47,9 @@ points [1,2] [2,3] [4,5]
 polylines [1,-3] [3,0] [6,4] [1,-3]
 parametric-function x='cos(t)' y='sin(t)' color='blue'
 ```
+
+## Future Work
+1. Improving the existing functionality in terms of speed.
+2. Adding more features to draw the figures and mathematical models in all possible ways that can be visualized by humans.
+3. Adding features to animate and move the graphs.
+4. Adding support to 3D graphs.
