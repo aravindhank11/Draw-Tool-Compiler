@@ -1,0 +1,36 @@
+graph name='GRAPH NAME'
+vector [1,2]
+function f(x)='x*x' color='yellow'
+vector [1,2] [4,5]
+implicit-function f(x,y)='x*x + y*y' color='green'
+derivative-to-function f(x)='x^4' color='red' df(x)='4*x^3'
+points [1,2] [2,3] [4,5]
+polylines [1,-3] [3,0] [6,4] [1,-3]
+parametric-function x='cos(t)' y='sin(t)' color='blue'
+
+
+SYNTAX USED
+
+To plot a graph
+graph name='GRAPH NAME' (first line of code always)
+
+To plot a function
+function f(x)='FUNCTION IN TERMS OF x' color='COLOR'
+
+To plot an implicit function
+implicit-function f(x,y)='FUNCTION IN TERMS OF x AND y' color='COLOR'
+
+To plot a parametric function
+parametric-function x='FUNCTION IN TERMS OF t' y='FUNCTION IN TERMS OF t' color='COLOR'
+
+To plot derivative to a function
+derivative-to-function f(x)='FUNCTION IN TERMS OF x' color='COLOR' df(x)='DERIVATIVE FUNCTION' d-color='COLOR'
+
+To plot points
+points  [x1,y1] [x2,y2] [x3,y3] .... [xn,yn]
+
+To plot shapes
+polylines [x1,y1] [x2,y2] [x3,y3] .... [xn,yn]
+
+To plot a vector
+vector [x1,y1] [x0,y0](This is the offset and is optional)

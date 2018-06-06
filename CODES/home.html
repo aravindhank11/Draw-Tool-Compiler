@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<HTML>
+<SCRIPT>
+  function validate()
+  {
+    var codes = document.getElementById('code').value.trim();
+    if(codes.length<1)
+    {
+      alert("No codes");
+      return false;
+    }
+    return true;
+  }
+</SCRIPT>
+<BODY>
+<FORM ONSUBMIT="return validate()" ACTION="lexical.php" METHOD="POST">
+<TEXTAREA ROWS="25" COLS="100" ID="code" NAME="code"></TEXTAREA><br><br>
+<INPUT TYPE="SUBMIT" NAME="submit">
+</FORM>
+</BODY>
+</HTML>
